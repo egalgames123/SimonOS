@@ -135,7 +135,7 @@ void process_command(const char* input) {
         print("Commands:\n");
         print("help - show this message\n");
         print("echo - repeat input\n");
-        print("clear - clear screen (not implemented)\n");
+        print("clear - clear screen\n");
     }
     else if (strncmp(input, "echo ", 5) == 0) {
         print(input + 5);
