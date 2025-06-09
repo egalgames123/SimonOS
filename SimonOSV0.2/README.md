@@ -33,3 +33,23 @@ Compile the kernel and load it using a Multiboot-compliant bootloader like GRUB.
 
 Once booted, the shell prompts with:
 
+SimonOS >
+
+
+You can enter supported commands directly.
+
+## Notes
+
+- The shell is minimal and intended for educational purposes
+- No permanent storage – all files are lost after reboot
+- Input supports live typing with proper key modifiers
+
+## Planned Features
+
+- Add persistent storage support (e.g., disk/virtual drive)
+- More advanced shell input editing and command history
+- Additional file management and process features
+
+---
+
+Feel free to explore, modify, or contribute to SimonOS!
