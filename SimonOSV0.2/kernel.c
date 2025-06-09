@@ -178,6 +178,7 @@ void process_command(const char* input) {
         print("clear - clear screen\n");
         print("ls - list files\n");
         print("cat <file> - show file content\n");
+        print("version - shows SimonOS version\n");
     }
     else if (strncmp(input, "echo ", 5) == 0) {
         const char* arrow = " > ";
@@ -219,6 +220,9 @@ void process_command(const char* input) {
         } else {
             print("File not found.\n");
         }
+    }
+    else if (strncmp(input, "version", 7) == 0){
+        print("Your SimonOS version is v0.2.\n");
     }
     else if (strncmp(input, "touch ", 6) == 0) {
         if (fs_create(input + 6)) {
